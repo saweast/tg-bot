@@ -1,0 +1,17 @@
+{
+  "name": "tg-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot to download YouTube Shorts, Instagram Reels, TikTok",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "p-queue": "^6.6.2"
+  }
+}

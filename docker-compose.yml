@@ -1,0 +1,9 @@
+services:
+  bot:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    # Optional cookies: create cookies.txt, then uncomment and set COOKIES_FILE=/app/cookies.txt in .env
+    # Mount without :ro so yt-dlp can update cookies (e.g. Instagram)
+    volumes:
+      - ./cookies.txt:/app/cookies.txt
