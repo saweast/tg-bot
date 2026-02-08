@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "Telegram bot to download YouTube Shorts, Instagram Reels, TikTok",
   "main": "src/index.js",
-  "scripts": {
-    "start": "node src/index.js"
-  },
-  "engines": {
-    "node": ">=20"
-  },
+  "scripts": { "start": "node src/index.js" },
+  "engines": { "node": ">=20" },
   "dependencies": {
     "dotenv": "^16.4.5",
     "node-telegram-bot-api": "^0.66.0",
     "p-queue": "^6.6.2"
+  },
+  "overrides": {
+    "form-data": ">=2.5.4",
+    "qs": ">=6.14.1",
+    "tar": ">=7.5.7",
+    "glob": ">=11.1.0",
+    "cross-spawn": ">=7.0.5"
   }
 }

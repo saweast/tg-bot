@@ -1,8 +1,10 @@
-FROM node:20-bookworm-slim
+FROM node:22-bookworm-slim
 
 ARG YT_DLP_VERSION=2025.12.08
 ARG TARGETARCH
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update \
+    && apt-get upgrade -y --no-install-recommends \
+    && apt-get install -y --no-install-recommends \
     curl \
     ffmpeg \
     ca-certificates \

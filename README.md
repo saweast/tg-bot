@@ -58,7 +58,7 @@ docker compose up --build
      ```
      (Без `:ro`, щоб yt-dlp міг оновлювати cookies.)
    - У `.env`: `COOKIES_FILE=/app/cookies.txt`.
-   - Перезапусти: `docker compose up -d --force-recreate`.
+   - Перезапусти: `ERROR   failed to get image vdev/tg-bot:latest: failed to pull image vdev/tg-bot:latest: GET https://index.docker.io/v2/vdev/tg-bot/manifests/latest: UNAUTHORIZED: authentication required; [map[Action:pull Class: Name:vdev/tg-bot Type:repository]]  up -d --force-recreate`.
 
 Бот передає cookies в yt-dlp лише якщо файл існує і не порожній.
 
